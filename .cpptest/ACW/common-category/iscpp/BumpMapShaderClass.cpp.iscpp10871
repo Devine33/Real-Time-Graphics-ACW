@@ -1,0 +1,6 @@
+fileName=C:\Temp\Final\ACW\ACW\BumpMapShaderClass.cpp
+isCpp=
+compilerOpts=-I"C:\Program Files (x86)\Parasoft\C++test for Visual Studio\9.6\engine\runtime\include" /ZI /W3 /Od /EHsc /RTC1 /MDd /fp:precise /Gd /GS /I"C:\Temp\Final\ACW\packages\AntTweakBar.1.16.3\build\native\../..//build/native/include/" /I"C:\Temp\Final\ACW\packages\directxtk_desktop_2015.2016.12.5.1\build\native\../../build/native/include/" /Gm /DHAS_ANTTWEAKBAR /DHAS_DIRECTXTK /D_DEBUG /D_WINDOWS /D_UNICODE /DUNICODE /Zc:wchar_t /Zc:forScope /Zc:inline /WX- /nologo -DPARASOFT_CPPTEST -I.
+compilerId=vc_14_0-64
+workingDir=C:\Temp\Final\ACW\ACW\
+advancedOptionsHash=0

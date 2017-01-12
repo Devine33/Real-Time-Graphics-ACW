@@ -1,0 +1,164 @@
+﻿  TriangleClass.cpp
+  TransparencyShaderClass.cpp
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(16): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(16): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(16): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(25): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(25): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(25): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.cpp(28): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.cpp(28): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.cpp(28): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.cpp(137): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.cpp(137): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.cpp(137): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+  TextureShaderClass.cpp
+c:\users\philip\desktop\acw anttweak\acw\acw\textureshaderclass.h(17): error C2719: 'unnamed-parameter': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\textureshaderclass.h(24): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\textureshaderclass.h(24): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\textureshaderclass.h(24): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\textureshaderclass.cpp(33): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\textureshaderclass.cpp(33): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\textureshaderclass.cpp(33): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\textureshaderclass.cpp(152): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\textureshaderclass.cpp(152): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\textureshaderclass.cpp(152): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+  TextureClass.cpp
+  SystemsClass.cpp
+c:\users\philip\desktop\acw anttweak\acw\acw\shaderclass.h(15): error C2719: 'unnamed-parameter': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shaderclass.h(21): error C2719: 'unnamed-parameter': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\textureshaderclass.h(17): error C2719: 'unnamed-parameter': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\textureshaderclass.h(24): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\textureshaderclass.h(24): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\textureshaderclass.h(24): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(16): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(16): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(16): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(25): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(25): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(25): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.h(17): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.h(17): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.h(17): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.h(18): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.h(18): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.h(18): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.h(16): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.h(16): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.h(16): error C2719: 'proj': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.h(24): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.h(24): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.h(24): error C2719: 'proj': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\systemsclass.cpp(283): warning C4065: switch statement contains 'default' but no 'case' labels
+  SphereClass.cpp
+  ShaderManagerClass.cpp
+c:\users\philip\desktop\acw anttweak\acw\acw\textureshaderclass.h(17): error C2719: 'unnamed-parameter': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\textureshaderclass.h(24): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\textureshaderclass.h(24): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\textureshaderclass.h(24): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(16): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(16): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(16): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(25): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(25): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(25): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.h(17): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.h(17): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.h(17): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.h(18): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.h(18): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.h(18): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.cpp(37): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.cpp(37): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.cpp(37): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.cpp(52): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.cpp(52): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.cpp(52): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+  ShaderClass.cpp
+c:\users\philip\desktop\acw anttweak\acw\acw\shaderclass.h(15): error C2719: 'unnamed-parameter': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shaderclass.h(21): error C2719: 'unnamed-parameter': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shaderclass.cpp(24): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shaderclass.cpp(24): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shaderclass.cpp(24): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shaderclass.cpp(116): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shaderclass.cpp(116): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shaderclass.cpp(116): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+  ParticleSystemClass.cpp
+  ParticleShaderClass.cpp
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.h(16): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.h(16): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.h(16): error C2719: 'proj': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.h(24): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.h(24): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.h(24): error C2719: 'proj': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.cpp(32): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.cpp(32): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.cpp(32): error C2719: 'proj': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.cpp(133): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.cpp(133): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.cpp(133): error C2719: 'proj': formal parameter with requested alignment of 16 won't be aligned
+  Main.cpp
+c:\users\philip\desktop\acw anttweak\acw\acw\shaderclass.h(15): error C2719: 'unnamed-parameter': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shaderclass.h(21): error C2719: 'unnamed-parameter': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\textureshaderclass.h(17): error C2719: 'unnamed-parameter': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\textureshaderclass.h(24): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\textureshaderclass.h(24): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\textureshaderclass.h(24): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(16): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(16): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(16): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(25): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(25): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(25): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.h(17): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.h(17): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.h(17): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.h(18): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.h(18): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.h(18): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.h(16): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.h(16): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.h(16): error C2719: 'proj': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.h(24): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.h(24): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.h(24): error C2719: 'proj': formal parameter with requested alignment of 16 won't be aligned
+  LightClass.cpp
+  InputsClass.cpp
+  GraphicsClass.cpp
+c:\users\philip\desktop\acw anttweak\acw\acw\shaderclass.h(15): error C2719: 'unnamed-parameter': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shaderclass.h(21): error C2719: 'unnamed-parameter': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\textureshaderclass.h(17): error C2719: 'unnamed-parameter': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\textureshaderclass.h(24): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\textureshaderclass.h(24): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\textureshaderclass.h(24): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(16): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(16): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(16): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(25): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(25): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\transparencyshaderclass.h(25): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.h(17): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.h(17): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.h(17): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.h(18): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.h(18): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\shadermanagerclass.h(18): error C2719: 'projection': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.h(16): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.h(16): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.h(16): error C2719: 'proj': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.h(24): error C2719: 'world': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.h(24): error C2719: 'view': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\particleshaderclass.h(24): error C2719: 'proj': formal parameter with requested alignment of 16 won't be aligned
+c:\users\philip\desktop\acw anttweak\acw\acw\graphicsclass.cpp(20): warning C4316: 'DirectXClass': object allocated on the heap may not be aligned 16
+c:\users\philip\desktop\acw anttweak\acw\acw\graphicsclass.cpp(34): warning C4316: 'CameraClass': object allocated on the heap may not be aligned 16
+c:\users\philip\desktop\acw anttweak\acw\acw\graphicsclass.cpp(34): warning C4800: 'CameraClass *': forcing value to bool 'true' or 'false' (performance warning)
+c:\users\philip\desktop\acw anttweak\acw\acw\graphicsclass.cpp(43): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\philip\desktop\acw anttweak\acw\acw\graphicsclass.cpp(45): warning C4800: 'TriangleClass *': forcing value to bool 'true' or 'false' (performance warning)
+c:\users\philip\desktop\acw anttweak\acw\acw\graphicsclass.cpp(237): warning C4305: 'argument': truncation from 'double' to 'float'
+  GeometryClass.cpp
+  DirectXClass.cpp
+c:\users\philip\desktop\acw anttweak\acw\acw\directxclass.cpp(166): warning C4800: 'HRESULT': forcing value to bool 'true' or 'false' (performance warning)
+c:\users\philip\desktop\acw anttweak\acw\acw\directxclass.cpp(205): warning C4800: 'HRESULT': forcing value to bool 'true' or 'false' (performance warning)
+  CubeClass.cpp
+  CameraClass.cpp
+  Generating Code...

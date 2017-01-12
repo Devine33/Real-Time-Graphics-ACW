@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="FullSignature">
+  <Class Name="BumpMapModel" Collapsed="true">
+    <Position X="1" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AiAUAAAQAsACAUAwAAAYAREAAAgAAAAAABAgAICAEAA=</HashCode>
+      <FileName>BumpMapModel.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BumpMapShaderClass" Collapsed="true">
+    <Position X="2.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgIYAEAAAAAAxAAAAAGAUBAEACAAABAABAgAAAAAAA=</HashCode>
+      <FileName>BumpMapShaderClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraClass" Collapsed="true">
+    <Position X="4.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgQAgwEEWCCCAAsQAA0cUSgACBAQlhQARAgYgAgAAA=</HashCode>
+      <FileName>CameraClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CubeClass" Collapsed="true">
+    <Position X="6.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AyCEQQASAQAAAUAQBAAYABEAAAAQCAAABBFgAECAEAA=</HashCode>
+      <FileName>CubeClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DebugWindowClass" Collapsed="true">
+    <Position X="8" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CCAAAAAQAAAgAUAQAAAQCRAAQAIACAABABAgAACAEQA=</HashCode>
+      <FileName>DebugWindowClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DepthShaderClass" Collapsed="true">
+    <Position X="9.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAARAAAIAGAUAAEACAAgAAABAgAAAAAAA=</HashCode>
+      <FileName>DepthShaderClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DirectXClass" Collapsed="true">
+    <Position X="1" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KAACgCAQEAQBAOBAUJMEAEWYAAAAEIrBJSkgEEBCEDI=</HashCode>
+      <FileName>DirectXClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeometryClass" Collapsed="true">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>GeometryClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GraphicsClass" Collapsed="true">
+    <Position X="4.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IKSCMF6AgACAFRQgQAAwAUAagBKBohKAIJYgLUAAgEU=</HashCode>
+      <FileName>GraphicsClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InputsClass" Collapsed="true">
+    <Position X="6.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAgQAAAAiAAAAAAAAAAAAAAAAAQAAAAAQ=</HashCode>
+      <FileName>InputsClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LightClass" Collapsed="true">
+    <Position X="8" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAhEAAAAAIQCwAgAAAAEAAAAIAAABASACEACAAAAA=</HashCode>
+      <FileName>LightClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParticleShaderSystem" Collapsed="true">
+    <Position X="1" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgIIAEAAAAACRAAQAAGAUAAEACAAABAABAgAAAAAAA=</HashCode>
+      <FileName>ParticleShaderSystem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParticleSystem" Collapsed="true">
+    <Position X="2.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAUEQASBsAAA0QYBAAQSRIAQAgIGAEAABAgAACAEBE=</HashCode>
+      <FileName>ParticleSystem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PositionLight" Collapsed="true">
+    <Position X="4.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAhkAAACAEAAgAgAAAAASAgCAACggACAAEAAAIAAA=</HashCode>
+      <FileName>PositionLight.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RenderToTextureClass" Collapsed="true">
+    <Position X="6.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIEAAAUBAAAEEAQQAAEAAAAhCAEAoFAAAAAA=</HashCode>
+      <FileName>RenderToTextureClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShaderClass" Collapsed="true">
+    <Position X="8" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAIAEEgAAAARAAAAgCAEAAEACAIABIABApAAAQAgA=</HashCode>
+      <FileName>ShaderClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShaderManagerClass" Collapsed="true">
+    <Position X="9.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAARAAAQAAAQAgAACABQAAAAAAACgACAAiAAAAAAA=</HashCode>
+      <FileName>ShaderManagerClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShadowLightClass" Collapsed="true">
+    <Position X="1" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABkIAACAEAAgAgAAAAASAgCAACggACAAEAIAAAAA=</HashCode>
+      <FileName>ShadowLightClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShadowShaderClass" Collapsed="true">
+    <Position X="2.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAYEEAAAAAARAAAAAGAUAAEACgAABAABEhAYAAAAA=</HashCode>
+      <FileName>ShadowShaderClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ModelClass" Collapsed="true">
+    <Position X="9.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AiAkAQASAAAAAcAQAAAYAQAAAAACAAAAABAgAACAEAA=</HashCode>
+      <FileName>ModelClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpotLight" Collapsed="true">
+    <Position X="4.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAgIIAEABABAARBAAAAGAUAAEACAAABAABAhAAAAAAA=</HashCode>
+      <FileName>SpotLight.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpotLightSystem" Collapsed="true">
+    <Position X="6.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAgAgAAAAAAAAAAAAgAACgAEAAAAAAA=</HashCode>
+      <FileName>SpotLightSystem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StandardTextureClass" Collapsed="true">
+    <Position X="8" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgIIAEBAAAAARAAAAAGAQAAEECAAABAABAhAAAAAAA=</HashCode>
+      <FileName>StandardTextureClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SystemsClass" Collapsed="true">
+    <Position X="9.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAkCIAAAAAAAAQAACAAAASAAwYAAAAAQAAAgBAAAAAM=</HashCode>
+      <FileName>SystemsClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextureArrayClass" Collapsed="true">
+    <Position X="1" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAQAAAAAAAQAAAAgAAAAAAAAgAAAQAAg=</HashCode>
+      <FileName>TextureArrayClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextureClass" Collapsed="true">
+    <Position X="2.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABQACAAAAIQAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TextureClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextureNoLightClass" Collapsed="true">
+    <Position X="4.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>TextureNoLightClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextureShaderClass" Collapsed="true">
+    <Position X="6.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgoYAEEgAAAARAAAAAHAEAAFACAAABIABApAACQEgA=</HashCode>
+      <FileName>TextureShaderClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TransparencyShaderClass" Collapsed="true">
+    <Position X="8" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgIIAEEgAAAARAAAAAHAEAAFADAAABIBBIpAAAQAgA=</HashCode>
+      <FileName>TransparencyShaderClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriangleClass" Collapsed="true">
+    <Position X="9.75" Y="5" Width="1.5" />
+    <NestedTypes>
+      <Struct Name="TriangleClass::VertexType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TriangleClass.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="TriangleClass::LightType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TriangleClass.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ASCEQQASAAAABUAQBBAQABAAAAASCAAAABFwAECAEAA=</HashCode>
+      <FileName>TriangleClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

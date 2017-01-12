@@ -1,0 +1,2 @@
+
+    1. Directory for this workspace was not created, there can occur some problems during analysis

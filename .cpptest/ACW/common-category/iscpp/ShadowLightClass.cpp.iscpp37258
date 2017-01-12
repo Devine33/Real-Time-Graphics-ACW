@@ -1,0 +1,6 @@
+fileName=C:\Temp\new Camera\ACW\ACW\ShadowLightClass.cpp
+isCpp=
+compilerOpts=-I"C:\Program Files (x86)\Parasoft\C++test for Visual Studio\9.6\engine\runtime\include" /Zi /W3 /O2 /EHsc /MD /fp:precise /Gd /GS /Oi /I"C:\Temp\new Camera\ACW\packages\AntTweakBar.1.16.3\build\native\../..//build/native/include/" /I"C:\Temp\new Camera\ACW\packages\directxtk_desktop_2015.2016.12.5.1\build\native\../../build/native/include/" /Gm- /Gy /DHAS_ANTTWEAKBAR /DHAS_DIRECTXTK /DNDEBUG /D_WINDOWS /D_UNICODE /DUNICODE /Zc:wchar_t /Zc:forScope /Zc:inline /WX- /nologo -DPARASOFT_CPPTEST -I.
+compilerId=vc_14_0-64
+workingDir=C:\Temp\new Camera\ACW\ACW\
+advancedOptionsHash=0

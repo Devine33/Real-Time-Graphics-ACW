@@ -1,0 +1,1347 @@
+<html xmlns:graph="graph" xmlns:results="results">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <style type="text/css">
+    BODY,P,OL,TD,pre{font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-style: normal;color: #000000;}
+    A:link {font-family: Arial, Helvetica, sans-serif;font-style: normal;color: #990000;text-decoration: none;}
+    A:active {font-family: Arial, Helvetica, sans-serif;font-style: normal;color: #990000;text-decoration: none;}
+    A:visited {font-family: Arial, Helvetica, sans-serif;font-style: normal;color: #999999;text-decoration: none;}
+    A:hover {font-family: Arial, Helvetica, sans-serif;font-style: normal;color: #990000;text-decoration: underline;}
+    A.gray_link:link {font-family: Arial;font-size: 12px;color: #666666;text-decoration: none;}
+    A.gray_link:active {font-family: Arial;font-size: 12px;color: #666666;text-decoration: none;}
+    A.gray_link:visited {font-family: Arial;font-size: 12px;color: #666666;text-decoration: none;}
+    A.gray_link:hover {font-family: Arial;font-size: 12px;color: #666666;text-decoration: underline;}
+    A.red_link:link {font-family: Arial;font-size: 12px;color: #990000;text-decoration: none;}
+    A.red_link:active {font-family: Arial;font-size: 12px;color: #990000;text-decoration: none;}
+    A.red_link:visited {font-family: Arial;font-size: 12px;color: #990000;text-decoration: none;}
+    A.red_link:hover {font-family: Arial;font-size: 12px;color: #990000;text-decoration: underline;}
+    A.green_link:link {font-family: Arial;font-size: 12px;color: #008040;text-decoration: none;}
+    A.green_link:active {font-family: Arial;font-size: 12px;color: #008040;text-decoration: none;}
+    A.green_link:visited {font-family: Arial;font-size: 12px;color: #008040;text-decoration: none;}
+    A.green_link:hover {font-family: Arial;font-size: 12px;color: #008040;text-decoration: underline;}
+    A.black_link:link {font-family: Arial;font-size: 12px;color: #000000;text-decoration: none;}
+    A.black_link:active {font-family: Arial;font-size: 12px;color: #000000;text-decoration: none;}
+    A.black_link:visited {font-family: Arial;font-size: 12px;color: #000000;text-decoration: none;}
+    A.black_link:hover {font-family: Arial;font-size: 12px;color: #000000;text-decoration: underline;}
+    
+    A.blue_link:link {font-family: Arial;font-size: 12px;color: #427fb6;text-decoration: none;}
+    A.blue_link:active {font-family: Arial;font-size: 12px;color: #427fb6;text-decoration: none;}
+    A.blue_link:visited {font-family: Arial;font-size: 12px;color: #427fb6;text-decoration: none;}
+    A.blue_link:hover {font-family: Arial;font-size: 12px;color: #427fb6;text-decoration: underline;}
+    
+    A.gray_red_link:link {font-family: Arial;font-size: 12px;color: #666666;text-decoration: none;}
+    A.gray_red_link:active {font-family: Arial;font-size: 12px;color: #666666;text-decoration: none;}
+    A.gray_red_link:visited {font-family: Arial;font-size: 12px;color: #666666;text-decoration: none;}
+    A.gray_red_link:hover {font-family: Arial;font-size: 12px;color: #666666;text-decoration: none;}
+    DIV.suite_details{margin-left: 40px; padding: 10px; border: 2px solid #99aaaa;}
+    DIV.test_comment{color:#666666;}
+    DIV.header{font-size: 32px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #427fb6 }
+    DIV.small_header{font-size: 18px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #427fb6 }    
+    FONT.gray {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #999999;}    
+    FONT.gray2, FONT.gray_red {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #666666;}
+    FONT.white {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #FFFFFF;}
+    FONT.time {font-size: 11px;font-family: Arial, Helvetica, sans-serif;color: #000000;}
+    FONT.black {font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-style: normal;color: #000000;}
+    FONT.red {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #990000;}
+    FONT.red2 {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #990000; text-decoration: underline;}
+    FONT.blue {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #427fb6;}
+    FONT.green {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #008040;}
+    FONT.orange {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #F69500;}
+    FONT.goldenrod {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #DAA520;}    
+    FONT.small {font-size: 3px;font-family: Arial, Helvetica, sans-serif;color: #cccccc;}
+    IMG.screenshot{float:left; margin-right: 20px; border:1px solid black;}
+    SELECT.cs_authors {font-family: Arial, Helvetica, sans-serif;font-size: 12px;}  
+    SELECT.ju_authors {font-family: Arial, Helvetica, sans-serif;font-size: 12px;}  
+    SPAN.toggle_button{width: 16px; padding-right: 2px; display: inline-block;} 
+    TD.associations{vertical-align: top;}
+    TD.collapse_controls{text-align:right;}
+    TD.cs_authors{font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-style: normal;color: #000000;border: 1px; bordercolor: #d9c8ac;}
+    TD.error{background-color:#ffeeee}
+    TD.errorsingleborder{background-color:#ffeeee;border:1px solid #CBCBCB}
+    TD.singleborder{ border:1px solid #CBCBCB}
+    TABLE.header{background-color:#FFFFFF}
+    TABLE.singleborder{ border:1px solid #CBCBCB}
+    TABLE.doubleborder{ border:2px solid #CBCBCB}     
+    TABLE.singleborder_blue{ border:2px solid #427fb6}
+    TD.fixed_width{width: 150px;}
+    TD.no_error{}
+    TD.suite_details{padding:2px; }
+    UL.metrics {font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-style: normal;color: #000000; list-style-type: none; margin: 0; padding-left:12px;}
+    UL.root {font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-style: normal;color: #000000; list-style-type: none; margin: 0; padding-left:0px; margin-left:3px;}
+    UL {font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-style: normal;color: #000000; list-style-type: none; margin: 0; padding-left:0px; margin-left:12px;}
+    LI {font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-style: normal;color: #000000; list-style-type: none; margin: 0; padding-left: 0px;}
+    #foldheader{cursor:pointer;cursor:hand ;}
+    #cs_foldheader{cursor:pointer;cursor:hand ;}
+    #cr_foldheader{cursor:pointer;cursor:hand ;}
+    #metrics_foldheader{cursor:pointer;cursor:hand ;}
+    #exec_foldheader{cursor:pointer;cursor:hand ;}
+    #paramsHeader {word-break:break-all;overflow: auto; padding: 3px;}
+    </style><title>462702
+- Static Analysis [ 120 / 58 / 50 ]
+
+</title><script language="JavaScript">
+    var nwin;    
+    function openWin (loc_to_open) {    
+       if (!nwin || nwin.closed) {
+          nwin = window.open(loc_to_open,'');
+       } else {
+          nwin.location = loc_to_open;
+       }
+       nwin.focus();
+    }
+    function openDevReport (dev_rep_name) {
+       openWin('&id=' + dev_rep_name);
+    }
+    </script><script language="JavaScript">
+    function sortBySeverity(urgent){
+    if(urgent != null)  {
+        sev=document.getElementById("cs_sevtrue");
+        sev_link=document.getElementById("cs_link_sevtrue");
+        sev_title=document.getElementById("cs_title_sevtrue");
+    } else {
+        sev=document.getElementById("cs_sev");
+        sev_link=document.getElementById("cs_link_sev");
+        sev_title=document.getElementById("cs_title_sev");
+    }   
+    if(sev != null) sev.style.display='block';
+    if(sev_title != null) sev_title.style.display='block';
+    if(sev_link != null) {
+    sev_link.style.color="#666666";  
+    sev_link.style.textDecoration="none";
+    }
+    if(urgent != null)  {
+        cat=document.getElementById("cs_cattrue");
+        cat_link=document.getElementById("cs_link_cattrue");
+        cat_title=document.getElementById("cs_title_cattrue");
+    } else {
+        cat=document.getElementById("cs_cat");
+        cat_link=document.getElementById("cs_link_cat");
+        cat_title=document.getElementById("cs_title_cat");
+    }   
+    if(cat != null) cat.style.display='none';
+    if(cat_title != null) cat_title.style.display='none';
+    if(cat_link != null) {
+    cat_link.style.color="#990000";
+    cat_link.style.textDecoration="underline";
+    }
+    }
+    
+    function sortByCategory(urgent){
+    if(urgent != null)  {
+        sev=document.getElementById("cs_sevtrue");
+        sev_link=document.getElementById("cs_link_sevtrue");
+        sev_title=document.getElementById("cs_title_sevtrue");
+    } else {
+        sev=document.getElementById("cs_sev");
+        sev_link=document.getElementById("cs_link_sev");
+        sev_title=document.getElementById("cs_title_sev");
+    }
+    if(sev != null) sev.style.display='none';
+    if(sev_title != null) sev_title.style.display='none';
+    if(sev_link != null) { 
+    sev_link.style.color="#990000";   
+    sev_link.style.textDecoration="underline";
+    }       
+    if(urgent != null)  {
+        cat=document.getElementById("cs_cattrue");
+        cat_link=document.getElementById("cs_link_cattrue");
+        cat_title=document.getElementById("cs_title_cattrue");
+    } else {
+        cat=document.getElementById("cs_cat");
+        cat_link=document.getElementById("cs_link_cat");
+        cat_title=document.getElementById("cs_title_cat");
+    }
+    if(cat != null) cat.style.display='block';
+    if(cat_title != null) cat_title.style.display='block';
+    if(cat_link != null) { 
+    cat_link.style.color="#666666"; 
+    cat_link.style.textDecoration="none";
+    }
+    }
+    </script><script language="JavaScript">
+		function generateHeader() {			
+        	var header="<table xmlns:textutil='textutil' xmlns:authors='authors' width='100%' cellpadding='0' cellspacing='0'><tr><td bgcolor='#3965A6' "+
+       "background='rep_header_expander.jpg'"    
+       +" width='30%' align='left'>"+
+       "<img src='rep_header_logo.png' alt='rep_header_logo.png'/>"    
+       +"</td><td bgcolor='#3965A6'  "+
+       "background='rep_header_expander.jpg'"    
+       +"  height='80px' width='40%' align='center'>"+
+       "<img src='rep_header_3.png' alt='rep_header_3.png'/>"    
+       +"</td><td bgcolor='#3965A6'  "+
+       "background='rep_header_expander.jpg'"    
+       +"  height='80px' width='30%' align='center'></td></tr></table>";        	
+        	return header;
+    	}
+	
+    function showTrafficLogWithIterations(testId, iterationCount, time) {
+        var doc = window.open("","_blank",""); 
+        var optionsArray = new Array();
+        var execTime = document.getElementById("executionTimeIterationId1_" + testId).value;
+        var request = document.getElementById("requestIterationId1_" + testId).value;
+        var response = document.getElementById("responseIterationId1_" + testId).value;
+        for (var i = 0; i < iterationCount; i++) {
+            var option = (i+1);
+            optionsArray.push(option);
+        }
+        
+        doc.document.write(
+            "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>"+
+            "<html xmlns='http://www.w3.org/1999/xhtml'>"+
+            "<head>"+
+            "<title>Traffic Viewer</title>"+
+            "<style type='text/css'>"+
+	    "<!--"+
+	    "BODY,P,OL,TD,pre{font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-style: normal;color: #000000;}"+
+	    "DIV.header{font-size: 32px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #427fb6 }"+
+	    "DIV.small_header{font-size: 18px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #427fb6 }"+
+	    "FONT.time {font-size: 11px;font-family: Arial, Helvetica, sans-serif;color: #000000; padding-left:10px;}"+
+	    "FONT.white {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #FFFFFF;}"+
+	    ".textArea {width:100%; height: 235px;  resize: none; border-style: none; border-color: Transparent; outline: none; padding:0px; overflow:auto;}"+
+	    "TD.singleborder{ border:1px solid #CBCBCB}"+
+	    "TD.doubleborder{ border:2px solid #CBCBCB}"+
+	    "TABLE.header{background-color:#FFFFFF}"+
+	    "TABLE.singleborder_blue{ border:2px solid #427fb6; height: 500px; padding-left:25px; padding-right:25px; padding-bottom:25px; padding-top:5px;}"+
+	    "TABLE.singleborder{ border:1px solid #CBCBCB}"+
+	    "TABLE.doubleborder{ border:2px solid #CBCBCB}"+
+            "body {background-color: #E7F0F5;}"+
+            ".messageHeader {width:100%; background-color:#ccdddd; border: solid 1px #99aaaa; text-align:center;}"+
+            "#executionTime {width:95%; text-align:left; padding:10px;}"+
+            "-->"+
+            "</style>" + 
+            "<script type='text/javascript' language='javascript'>" +
+            "function setTrafficText(iterationId, execTimeStr) {" +
+            "var testId = document.getElementById('testId').value;" +
+            "var eTime = 'executionTimeIterationId';" +
+            "var req = 'requestIterationId';" +
+            "var resp = 'responseIterationId';" +
+            "eTime = eTime.concat(iterationId + '_' + testId);" + 
+            "req = req.concat(iterationId + '_' + testId);" + 
+            "resp = resp.concat(iterationId + '_' + testId);" + 
+            "var execTime = document.getElementById(eTime).value;" +
+            "var execTimeString = execTimeStr + ': <strong>' + execTime + 'ms</strong>';" +
+            "document.getElementById('executionTime').innerHTML = execTimeString;" +
+            "var request = document.getElementById(req).value;" +
+            "document.getElementById('requestMessage').value = request;" +
+            "var response = document.getElementById(resp).value;" +
+            "document.getElementById('responseMessage').value = response" +
+            "}" +
+            "<\/script>"+
+            "</head>"+
+            "<body>"+
+	    generateHeader() +
+            "<table width='100%' cellspacing='0'>"+
+            "<tr>"+
+            "<td style='padding:5px' align='center'>"+
+            "<font class='time'>"+time+"</font>"+
+            "</td>"+
+            "</tr>"+
+            "<tr>"+
+            "<td align='center'>"+
+            "<table align='center' width='95%' class='singleborder_blue' cellpadding='0' cellspacing='0' bgcolor='#FFFFFF'>"+
+            "<tr><td align='center' valign='top'>"+
+            "<table border='0' cellpadding='0' cellspacing='0' bordercolor='#99aaaa'>"+
+	    "<tr>"+
+	    "<td><div class='header' align='center'>TRAFFIC LOG</div></td>"+
+            "</tr>"+
+	    "</table>"+
+	    "<table width='95%' cellspacing='0' cellpadding='0'>");
+            if (iterationCount > 1) {
+                doc.document.write("<tr>"+
+                "<td align='left' >"+
+                "<select align='left' name='IterationCombo' size='1' onChange='javascript:setTrafficText(this.options[this.selectedIndex].value, &#39;Execution time&#39;);'>");
+                for (var i = 0; i < iterationCount; i++) {
+                    var iterationOption = optionsArray[i];
+                    doc.document.write("<option value='"+iterationOption+"'>Row #"+(i+1)+"</option>");
+                }
+                doc.document.write("</select>"+
+                "</td>"+
+                "</tr>");
+            }
+	    doc.document.write("<tr>"+
+	    "<td align='center'>"+
+	    "<div class='small_header'>Request</div></td>"+
+            "</tr>"+
+	    "<tr>"+
+            "<td class='doubleborder' align='center'><textarea class='textArea' name='requestMessage' id='requestMessage' rows='16' readOnly>"+request+"</textarea></td>"+
+            "</tr>"+
+            "</table>"+
+            "<br />"+
+            "<table width='95%' cellspacing='0' cellpadding='0'>"+
+	    "<tr>"+
+	    "<td align='center'>"+
+            "<div class='small_header'>Response</div></td>"+
+	    "</tr>"+
+	    "<tr>"+
+	    "<td align='left'>"+
+            "<div id='executionTime'>Execution time: <strong>"+execTime+"ms</strong></div>"+
+	    "</td>"+
+	    "</tr>"+
+            "<tr>"+	    
+	    "<td class='doubleborder' align='center'><textarea class='textArea' name='responseMessage' id='responseMessage' rows='16' readOnly>"+response+"</textarea></td>"+
+	    "</tr>"+
+	    "</table>"+
+            "</td>"+
+	    "</tr>"+
+	    "</table>"+
+            "</td>"+
+	    "</tr>"+	    
+            "</table>"+
+            "<br />"+
+            "<table align='center' width='100%' bgcolor='#1D488D' cellpadding='10' cellspacing='0'>"+
+            "<tr>"+
+            "<td align='center'><font class='white'>&#xA9;Parasoft Corp. -&#xA0;C++test&#xA0;9.6.2.298&#xA0;Reporting System&#xA0;</font></td>"+
+            "</tr>"+
+            "</table>");
+            
+            doc.document.write("<input type='hidden' id='");
+            doc.document.write("testId");
+            doc.document.write("' value='" + testId + "'/>");
+            for (var i = 0; i < iterationCount; i++) {
+                doc.document.write("<input type='hidden' id='");
+                var reqid = "executionTimeIterationId" + (i+1) + "_" + testId;
+                doc.document.write(reqid);
+                doc.document.write("' value='" + document.getElementById(reqid).value + "'/>");
+                
+                doc.document.write("<input type='hidden' id='");
+                var reqid = "requestIterationId" + (i+1) + "_" + testId;
+                doc.document.write(reqid);
+                var regExp = RegExp("'", "g") 
+                var reqString = document.getElementById(reqid).value.replace(regExp, "&#39;");
+                doc.document.write("' value='" + reqString + "'/>");
+                
+                doc.document.write("<input type='hidden' id='");
+                var respid = "responseIterationId" + (i+1) + "_" + testId;
+                doc.document.write(respid);
+                var respString = document.getElementById(respid).value.replace(regExp, "&#39;");
+                doc.document.write("' value='" +  respString + "'/>");
+            }
+            doc.document.write("</body>"+
+            "</html>");
+            doc.document.close();
+    }
+    </script></head>
+<body bgcolor="#E7F0F5">
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<table xmlns:textutil="textutil" xmlns:authors="authors" width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td bgcolor="#3965A6" background="rep_header_expander.jpg" height="80px" width="30%" align="left"><img src="rep_header_logo.png" alt="rep_header_logo.png" height="54px"></td>
+<td bgcolor="#3965A6" background="rep_header_expander.jpg" height="80px" width="40%" align="center"><img src="rep_header_3.png" alt="rep_header_3.png" height="54px"></td>
+<td bgcolor="#3965A6" background="rep_header_expander.jpg" height="80px" width="30%" align="center"></td>
+</tr>
+</table>
+<table width="100%" style="padding-left:25px;padding-right:25px;padding-bottom:25px;padding-top:0px" cellspacing="0">
+<tr>
+<td align="center">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="padding-left:20px" align="left" width="20%"></td>
+<td style="padding:10px" align="center" width="60%">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center">User configuration:
+	    		&nbsp;<b>08975 rule set</b></td>
+</tr>
+<tr>
+<td width="16%" align="center"><font class="time">2017-01-09T11:18:27+00:00</font></td>
+</tr>
+</table>
+</td>
+<td style="padding-right:20px" align="right" width="20%"></td>
+</tr>
+</table>
+<table width="100%" class="singleborder_blue" style="padding-left:25px;padding-right:25px;padding-bottom:25px;padding-top:5px" cellspacing="0" bgcolor="#FFFFFF" bordercolor="#A0CAEC">
+<tr>
+<td><a name="cst_462702"></a><table class="header" width="100%" border="0" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0">
+<tr>
+<td width="15%"></td>
+<td align="center">
+<div class="header">STATIC ANALYSIS</div>
+</td>
+<td width="15%" align="right" valign="bottom"></td>
+</tr>
+</table><br><table width="100%" border="0" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0">
+<tr>
+<td align="left"><a class="black_link" href="#cs_urg_dev1"><b>Recommended Tasks to Accomplish Today</b></a>:
+&nbsp;50
+</td>
+</tr>
+<tr>
+<td align="left">(push the "Import My Recommended Tasks" button to import the tasks into your workspace)</td>
+</tr>
+<tr>
+<td align="left"><b>Tasks</b>:
+
+58&nbsp;<a class="black_link" href="#cs_462702"><b>total</b></a>,
+&nbsp;120&nbsp;<b>suppressed</b></td>
+</tr>
+<tr>
+<td align="left"><b>Goal</b>:
+accomplish all tasks
+</td>
+</tr>
+</table><br><table width="100%" border="0" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<table class="header" width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="30%">&nbsp;</td>
+<td align="center">
+<div class="small_header" id="cs_title_cattrue" style="display:block;">All Recommended Tasks&nbsp;by Category</div>
+<div class="small_header" id="cs_title_sevtrue" style="display:none;">All Recommended Tasks&nbsp;by Severity</div>
+</td>
+<td align="right" width="30%"><font class="gray2">by:</font>&nbsp;&nbsp;&nbsp;<a xmlns:textutil="textutil" xmlns:authors="authors" id="cs_link_cattrue" class="gray_red_link" href="javascript:sortByCategory(true)">Category</a>&nbsp;&nbsp;&nbsp;<a xmlns:textutil="textutil" xmlns:authors="authors" id="cs_link_sevtrue" class="gray_red_link" href="javascript:sortBySeverity(true)">Severity</a>&nbsp;&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="left">
+<div id="cs_cattrue" style="display:block;">
+<table class="doubleborder" width="100%" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0">
+<tr>
+<td>&nbsp;
+[<b>10</b>]
+&nbsp;&nbsp;<b>Coding Conventions for C++</b>&nbsp;<font class="gray">(CODSTA-CPP)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>10</b>]
+&nbsp;&nbsp;Member functions shall be declared const whenever possible&nbsp;<font class="gray">(CODSTA-CPP-54-3)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td>&nbsp;
+[<b>40</b>]
+&nbsp;&nbsp;<b>STL Best Practices</b>&nbsp;<font class="gray">(STL)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>40</b>]
+&nbsp;&nbsp;Use vector and string instead of arrays&nbsp;<font class="gray">(STL-37-3)</font>&nbsp;
+</td>
+</tr>
+</table>
+</div>
+<div id="cs_sevtrue" style="display:none;">
+<table width="100%" class="doubleborder" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0">
+<tr>
+<td>&nbsp;
+[<b>50</b>]
+&nbsp;&nbsp;<b>Severity&nbsp;3 - Medium</b></td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>10</b>]
+&nbsp;&nbsp;Member functions shall be declared const whenever possible&nbsp;<font class="gray">(CODSTA-CPP-54-3)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>40</b>]
+&nbsp;&nbsp;Use vector and string instead of arrays&nbsp;<font class="gray">(STL-37-3)</font>&nbsp;
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table><br><table width="100%" border="0" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0">
+<tr>
+<td xmlns:textutil="textutil" xmlns:authors="authors" style="padding-left:20px;" colspan="2" align="left" nowrap><a name="cs_urg_dev1"></a><b>462702</b>&nbsp;&nbsp;Recommended Tasks to Accomplish Today			
+			:
+			&nbsp;50
+</td>
+<td xmlns:textutil="textutil" xmlns:authors="authors" align="right"><a class="blue_link" href="#top">Back to Top </a>&nbsp;&nbsp;&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="3" align="left">
+<table width="100%" bgcolor="#FFFFFF" bordercolor="#CBCBCB" class="doubleborder" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Header Files/DirectXClass.h</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">82:</font></td>
+<td>Use vector or string instead of array: color</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Header Files/InputsClass.h</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">17:</font></td>
+<td>Use vector or string instead of array: m_keys</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Header Files/ShaderClass.h</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">36:</font></td>
+<td>Use vector or string instead of array: Layout</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Header Files/SpotLight.h</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">42:</font></td>
+<td>Use vector or string instead of array: diffuseColor</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">47:</font></td>
+<td>Use vector or string instead of array: lightPosition</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Header Files/TextureArrayClass.h</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">18:</font></td>
+<td>Use vector or string instead of array: m_textures</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Header Files/TextureShaderClass.h</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">40:</font></td>
+<td>Use vector or string instead of array: Layout</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Header Files/TransparencyShaderClass.h</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">41:</font></td>
+<td>Use vector or string instead of array: Layout</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/BumpMapModel.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">57:</font></td>
+<td>Member function 'InitializeBuffers' should be declared as const</td>
+<td style="padding-right:10px;" align="right"><font class="gray">CODSTA-CPP-54-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">69:</font></td>
+<td>Use vector or string instead of array: vertices</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">76:</font></td>
+<td>Use vector or string instead of array: indices</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">222:</font></td>
+<td>Use vector or string instead of array: m_model</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">345:</font></td>
+<td>Use vector or string instead of array: vector1</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">346:</font></td>
+<td>Use vector or string instead of array: tvVector</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/BumpMapShaderClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">40:</font></td>
+<td>Member function 'InitializeVertexShader' should be declared as const</td>
+<td style="padding-right:10px;" align="right"><font class="gray">CODSTA-CPP-54-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">167:</font></td>
+<td>Member function 'InitializePixelShader' should be declared as const</td>
+<td style="padding-right:10px;" align="right"><font class="gray">CODSTA-CPP-54-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/CubeClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">54:</font></td>
+<td>Use vector or string instead of array: vertices</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">61:</font></td>
+<td>Use vector or string instead of array: indices</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">156:</font></td>
+<td>Use vector or string instead of array: m_model</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/DebugWindowClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">72:</font></td>
+<td>Use vector or string instead of array: vertices</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">79:</font></td>
+<td>Use vector or string instead of array: indices</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">200:</font></td>
+<td>Use vector or string instead of array: vertices</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/DepthShaderClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">40:</font></td>
+<td>Member function 'InitializeShader' should be declared as const</td>
+<td style="padding-right:10px;" align="right"><font class="gray">CODSTA-CPP-54-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">47:</font></td>
+<td>Use vector or string instead of array: polygonLayout</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/DirectXClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">50:</font></td>
+<td>Use vector or string instead of array: m_displayModeList</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">371:</font></td>
+<td>Use vector or string instead of array: blendFactor</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">386:</font></td>
+<td>Use vector or string instead of array: blendFactor</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">401:</font></td>
+<td>Use vector or string instead of array: blendFactor</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/GraphicsClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">461:</font></td>
+<td>Use vector or string instead of array: lightPosition</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/ModelClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">64:</font></td>
+<td>Member function 'InitializeBuffers' should be declared as const</td>
+<td style="padding-right:10px;" align="right"><font class="gray">CODSTA-CPP-54-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">74:</font></td>
+<td>Use vector or string instead of array: vertices</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">81:</font></td>
+<td>Use vector or string instead of array: indices</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">214:</font></td>
+<td>Use vector or string instead of array: m_model</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/ParticleShaderSystem.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">42:</font></td>
+<td>Member function 'InitializeVertexShader' should be declared as const</td>
+<td style="padding-right:10px;" align="right"><font class="gray">CODSTA-CPP-54-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">137:</font></td>
+<td>Member function 'InitializePixelShader' should be declared as const</td>
+<td style="padding-right:10px;" align="right"><font class="gray">CODSTA-CPP-54-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/ParticleSystem.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">125:</font></td>
+<td>Use vector or string instead of array: m_particleList</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">161:</font></td>
+<td>Use vector or string instead of array: m_vertices</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">168:</font></td>
+<td>Use vector or string instead of array: indices</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/RenderToTextureClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">136:</font></td>
+<td>Use vector or string instead of array: color</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/ShaderClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">53:</font></td>
+<td>Use vector or string instead of array: layout</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/ShadowShaderClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">40:</font></td>
+<td>Member function 'InitializeVertexShader' should be declared as const</td>
+<td style="padding-right:10px;" align="right"><font class="gray">CODSTA-CPP-54-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">45:</font></td>
+<td>Use vector or string instead of array: polygonLayout</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/SpotLight.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">52:</font></td>
+<td>Member function 'InitializeVertexShader' should be declared as const</td>
+<td style="padding-right:10px;" align="right"><font class="gray">CODSTA-CPP-54-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">56:</font></td>
+<td>Use vector or string instead of array: polygonLayout</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/StandardTextureClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">53:</font></td>
+<td>Use vector or string instead of array: polygonLayout</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/TextureArrayClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">15:</font></td>
+<td>Member function 'Initialize' should be declared as const</td>
+<td style="padding-right:10px;" align="right"><font class="gray">CODSTA-CPP-54-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/TextureShaderClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">59:</font></td>
+<td>Use vector or string instead of array: layout</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/TransparencyShaderClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">69:</font></td>
+<td>Use vector or string instead of array: layout</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/TriangleClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">64:</font></td>
+<td>Use vector or string instead of array: lighting</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">71:</font></td>
+<td>Use vector or string instead of array: indices</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan="3"><br></td>
+</tr>
+</table>
+<table width="100%" border="0" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<table class="header" width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="30%">&nbsp;</td>
+<td align="center">
+<div class="small_header" id="cs_title_cat" style="display:block;">All Tasks&nbsp;by Category</div>
+<div class="small_header" id="cs_title_sev" style="display:none;">All Tasks&nbsp;by Severity</div>
+</td>
+<td align="right" width="30%"><font class="gray2">by:</font>&nbsp;&nbsp;&nbsp;<a xmlns:textutil="textutil" xmlns:authors="authors" id="cs_link_cat" class="gray_red_link" href="javascript:sortByCategory()">Category</a>&nbsp;&nbsp;&nbsp;<a xmlns:textutil="textutil" xmlns:authors="authors" id="cs_link_sev" class="gray_red_link" href="javascript:sortBySeverity()">Severity</a>&nbsp;&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="left">
+<div id="cs_cat" style="display:block;">
+<table class="doubleborder" width="100%" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0">
+<tr>
+<td>&nbsp;
+[<b>10</b>]
+&nbsp;&nbsp;<b>Coding Conventions for C++</b>&nbsp;<font class="gray">(CODSTA-CPP)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>10</b>]
+&nbsp;&nbsp;Member functions shall be declared const whenever possible&nbsp;<font class="gray">(CODSTA-CPP-54-3)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td>&nbsp;
+[<b>2</b>]
+&nbsp;&nbsp;<b>Optimization</b>&nbsp;<font class="gray">(OPT)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>2</b>]
+&nbsp;&nbsp;Avoid unused local variables&nbsp;<font class="gray">(OPT-02-4)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td>&nbsp;
+[<b>1</b>]
+&nbsp;&nbsp;<b>UNKNOWN</b>&nbsp;<font class="gray">(OPT-13)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>1</b>]
+&nbsp;&nbsp;Declare member variables in the descending size order&nbsp;<font class="gray">(OPT-13-DOWNGRADED-5)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td>&nbsp;
+[<b>45</b>]
+&nbsp;&nbsp;<b>STL Best Practices</b>&nbsp;<font class="gray">(STL)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>45</b>]
+&nbsp;&nbsp;Use vector and string instead of arrays&nbsp;<font class="gray">(STL-37-3)</font>&nbsp;
+</td>
+</tr>
+</table>
+</div>
+<div id="cs_sev" style="display:none;">
+<table width="100%" class="doubleborder" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0">
+<tr>
+<td>&nbsp;
+[<b>55</b>]
+&nbsp;&nbsp;<b>Severity&nbsp;3 - Medium</b></td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>10</b>]
+&nbsp;&nbsp;Member functions shall be declared const whenever possible&nbsp;<font class="gray">(CODSTA-CPP-54-3)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>45</b>]
+&nbsp;&nbsp;Use vector and string instead of arrays&nbsp;<font class="gray">(STL-37-3)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td>&nbsp;
+[<b>2</b>]
+&nbsp;&nbsp;<b>Severity&nbsp;4 - Low</b></td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>2</b>]
+&nbsp;&nbsp;Avoid unused local variables&nbsp;<font class="gray">(OPT-02-4)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td>&nbsp;
+[<b>1</b>]
+&nbsp;&nbsp;<b>Severity&nbsp;5 - Lowest</b></td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>1</b>]
+&nbsp;&nbsp;Declare member variables in the descending size order&nbsp;<font class="gray">(OPT-13-DOWNGRADED-5)</font>&nbsp;
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table><br><table width="100%" border="0" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0">
+<tr>
+<td xmlns:textutil="textutil" xmlns:authors="authors" style="padding-left:20px;" colspan="2" align="left" nowrap><a name="cs_dev1"></a><b>462702</b>&nbsp;&nbsp;Total Tasks			
+			:
+			&nbsp;58
+</td>
+<td xmlns:textutil="textutil" xmlns:authors="authors" align="right"><a class="blue_link" href="#top">Back to Top </a>&nbsp;&nbsp;&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="3" align="left">
+<table width="100%" bgcolor="#FFFFFF" bordercolor="#CBCBCB" class="doubleborder" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Header Files/BumpMapModel.h</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">9:</font></td>
+<td>Members 'm_TextureArray, m_model' of class 'BumpMapModel' are declared in suboptimal order for memory layout</td>
+<td style="padding-right:10px;" align="right"><font class="gray">OPT-13-DOWNGRADED-5</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Header Files/DirectXClass.h</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">82:</font></td>
+<td>Use vector or string instead of array: color</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Header Files/InputsClass.h</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">17:</font></td>
+<td>Use vector or string instead of array: m_keys</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Header Files/ShaderClass.h</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">36:</font></td>
+<td>Use vector or string instead of array: Layout</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Header Files/SpotLight.h</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">42:</font></td>
+<td>Use vector or string instead of array: diffuseColor</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">47:</font></td>
+<td>Use vector or string instead of array: lightPosition</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Header Files/TextureArrayClass.h</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">18:</font></td>
+<td>Use vector or string instead of array: m_textures</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Header Files/TextureShaderClass.h</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">40:</font></td>
+<td>Use vector or string instead of array: Layout</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Header Files/TransparencyShaderClass.h</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">41:</font></td>
+<td>Use vector or string instead of array: Layout</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/BumpMapModel.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">57:</font></td>
+<td>Member function 'InitializeBuffers' should be declared as const</td>
+<td style="padding-right:10px;" align="right"><font class="gray">CODSTA-CPP-54-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">69:</font></td>
+<td>Use vector or string instead of array: vertices</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">76:</font></td>
+<td>Use vector or string instead of array: indices</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">222:</font></td>
+<td>Use vector or string instead of array: m_model</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">345:</font></td>
+<td>Use vector or string instead of array: vector1</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">345:</font></td>
+<td>Use vector or string instead of array: vector2</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">346:</font></td>
+<td>Use vector or string instead of array: tuVector</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">346:</font></td>
+<td>Use vector or string instead of array: tvVector</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/BumpMapShaderClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">40:</font></td>
+<td>Member function 'InitializeVertexShader' should be declared as const</td>
+<td style="padding-right:10px;" align="right"><font class="gray">CODSTA-CPP-54-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">47:</font></td>
+<td>Use vector or string instead of array: polygonLayout</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">167:</font></td>
+<td>Member function 'InitializePixelShader' should be declared as const</td>
+<td style="padding-right:10px;" align="right"><font class="gray">CODSTA-CPP-54-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/CubeClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">54:</font></td>
+<td>Use vector or string instead of array: vertices</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">61:</font></td>
+<td>Use vector or string instead of array: indices</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">156:</font></td>
+<td>Use vector or string instead of array: m_model</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/DebugWindowClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">72:</font></td>
+<td>Use vector or string instead of array: vertices</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">79:</font></td>
+<td>Use vector or string instead of array: indices</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">200:</font></td>
+<td>Use vector or string instead of array: vertices</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/DepthShaderClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">40:</font></td>
+<td>Member function 'InitializeShader' should be declared as const</td>
+<td style="padding-right:10px;" align="right"><font class="gray">CODSTA-CPP-54-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">47:</font></td>
+<td>Use vector or string instead of array: polygonLayout</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/DirectXClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">50:</font></td>
+<td>Use vector or string instead of array: m_displayModeList</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">371:</font></td>
+<td>Use vector or string instead of array: blendFactor</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">386:</font></td>
+<td>Use vector or string instead of array: blendFactor</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">401:</font></td>
+<td>Use vector or string instead of array: blendFactor</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/GraphicsClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">353:</font></td>
+<td>Local variable 'snowglobescale' declared but not used</td>
+<td style="padding-right:10px;" align="right"><font class="gray">OPT-02-4</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">362:</font></td>
+<td>Local variable 'mTranslate3' declared but not used</td>
+<td style="padding-right:10px;" align="right"><font class="gray">OPT-02-4</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">460:</font></td>
+<td>Use vector or string instead of array: diffuseColor</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">461:</font></td>
+<td>Use vector or string instead of array: lightPosition</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/ModelClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">64:</font></td>
+<td>Member function 'InitializeBuffers' should be declared as const</td>
+<td style="padding-right:10px;" align="right"><font class="gray">CODSTA-CPP-54-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">74:</font></td>
+<td>Use vector or string instead of array: vertices</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">81:</font></td>
+<td>Use vector or string instead of array: indices</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">214:</font></td>
+<td>Use vector or string instead of array: m_model</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/ParticleShaderSystem.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">42:</font></td>
+<td>Member function 'InitializeVertexShader' should be declared as const</td>
+<td style="padding-right:10px;" align="right"><font class="gray">CODSTA-CPP-54-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">48:</font></td>
+<td>Use vector or string instead of array: polygonLayout</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">137:</font></td>
+<td>Member function 'InitializePixelShader' should be declared as const</td>
+<td style="padding-right:10px;" align="right"><font class="gray">CODSTA-CPP-54-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/ParticleSystem.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">125:</font></td>
+<td>Use vector or string instead of array: m_particleList</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">161:</font></td>
+<td>Use vector or string instead of array: m_vertices</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">168:</font></td>
+<td>Use vector or string instead of array: indices</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/RenderToTextureClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">136:</font></td>
+<td>Use vector or string instead of array: color</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/ShaderClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">53:</font></td>
+<td>Use vector or string instead of array: layout</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/ShadowShaderClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">40:</font></td>
+<td>Member function 'InitializeVertexShader' should be declared as const</td>
+<td style="padding-right:10px;" align="right"><font class="gray">CODSTA-CPP-54-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">45:</font></td>
+<td>Use vector or string instead of array: polygonLayout</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/SpotLight.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">52:</font></td>
+<td>Member function 'InitializeVertexShader' should be declared as const</td>
+<td style="padding-right:10px;" align="right"><font class="gray">CODSTA-CPP-54-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">56:</font></td>
+<td>Use vector or string instead of array: polygonLayout</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/StandardTextureClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">53:</font></td>
+<td>Use vector or string instead of array: polygonLayout</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/TextureArrayClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">15:</font></td>
+<td>Member function 'Initialize' should be declared as const</td>
+<td style="padding-right:10px;" align="right"><font class="gray">CODSTA-CPP-54-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/TextureShaderClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">59:</font></td>
+<td>Use vector or string instead of array: layout</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/TransparencyShaderClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">69:</font></td>
+<td>Use vector or string instead of array: layout</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-right:10px;padding-left:10px" colspan="3"><b>ACW/ACW/Source Files/TriangleClass.cpp</b></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">64:</font></td>
+<td>Use vector or string instead of array: lighting</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+<tr>
+<td style="padding-left:10px"><font class="gray">71:</font></td>
+<td>Use vector or string instead of array: indices</td>
+<td style="padding-right:10px;" align="right"><font class="gray">STL-37-3</font></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan="3"><br></td>
+</tr>
+</table><br><script language="JavaScript">
+    if(document.getElementById("cs_link_sev") != null) {
+    document.getElementById("cs_link_sev").style.color="#990000";
+    document.getElementById("cs_link_sev").style.textDecoration="underline";
+    }
+    if(document.getElementById("cs_link_sevtrue") != null) {
+    document.getElementById("cs_link_sevtrue").style.color="#990000";
+    document.getElementById("cs_link_sevtrue").style.textDecoration="underline";
+    }
+    </script></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="100%" bgcolor="#1D488D" border="0" bordercolor="#999999" cellpadding="10" cellspacing="0">
+<tr>
+<td align="center"><font class="white">&copy;Parasoft Corp. -&nbsp;C++test&nbsp;9.6.2.298&nbsp;Reporting System&nbsp;</font></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
